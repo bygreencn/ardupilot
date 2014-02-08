@@ -129,8 +129,11 @@
     <ManifestTimestampUrl>http://timestamp.verisign.com/scripts/timestamp.dll</ManifestTimestampUrl>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="alglibnet2, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="AForge">
+      <HintPath>packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="alglibnet2">
+      <HintPath>Lib\alglibnet2.dll</HintPath>
     </Reference>
     <Reference Include="AWSSDK, Version=1.5.18.0, Culture=neutral, PublicKeyToken=9f476d3089b52be3, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -146,6 +149,7 @@
       <HintPath>Lib\csmatio.dll</HintPath>
     </Reference>
     <Reference Include="DirectShowLib-2005">
+      <HintPath>Lib\DirectShowLib-2005.dll</HintPath>
     </Reference>
     <Reference Include="GMap.NET.Core, Version=1.7.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -156,6 +160,7 @@
       <HintPath>Lib\GMap.NET.WindowsForms.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="Ionic.Zip.Reduced, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -216,10 +221,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Lib\ProjNet.dll</HintPath>
     </Reference>
-    <Reference Include="px4uploader, Version=1.0.4855.33293, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\px4uploader\bin\Release\px4uploader.exe</HintPath>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
+    <Reference Include="px4uploader">
+      <HintPath>Lib\px4uploader.exe</HintPath>
     </Reference>
     <Reference Include="System">
       <Private>False</Private>
@@ -237,12 +240,19 @@
     <Reference Include="System.Management">
       <Private>False</Private>
     </Reference>
-    <Reference Include="System.Reactive.Core, Version=2.0.20823.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
-    <Reference Include="System.Reactive.Interfaces, Version=2.0.20823.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
-    <Reference Include="System.Reactive.Linq, Version=2.0.20823.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
-    <Reference Include="System.Speech, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
+    <Reference Include="System.Reactive.Core">
+      <HintPath>packages\Rx-Core.2.2.2\lib\net40\System.Reactive.Core.dll</HintPath>
     </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>packages\Rx-Interfaces.2.2.2\lib\net40\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>packages\Rx-Linq.2.2.2\lib\net40\System.Reactive.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices">
+      <HintPath>packages\Rx-PlatformServices.2.2.3\lib\net40\System.Reactive.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Speech" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Windows.Forms" />

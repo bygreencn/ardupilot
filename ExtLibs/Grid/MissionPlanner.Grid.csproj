@@ -80,6 +80,10 @@
       <Name>MissionPlanner</Name>
       <Private>False</Private>
     </ProjectReference>
+    <ProjectReference Include="..\BaseClasses\BaseClasses.csproj">
+      <Project>{2A8E8AF5-74E7-49DB-A42E-9360FA7A6CC4}</Project>
+      <Name>BaseClasses</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Comms\MissionPlanner.Comms.csproj">
       <Project>{825e7a10-390c-4a2b-b3a8-491d14966912}</Project>
       <Name>MissionPlanner.Comms</Name>
